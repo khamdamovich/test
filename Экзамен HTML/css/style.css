@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body, html{
+    font-family: 'Cormorant Garamond', serif;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+}
+h1, h2, h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav_logo{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+.nav_list, .social{
+    display: flex;   
+}
+a{
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+ul, li, a{
+    color: darkgrey;
+    padding: 0 5px;
+}
+.stories_container{
+    display: flex;
+    align-items: center;
+}
+.stories_data{
+    padding: 0 10px;
+}
+.stories_img{
+    width: 450px;
+    height: 100%;
+    padding: 10px;
+}
+.stories_order{
+    order: 2;
+}
+.stories-text{
+    font-size: 1.5rem;
+}
+.button{
+    margin: 0 5px;
+    border: 1px solid;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+.gallery_container{
+    display: flex;
+}
+.features_container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.features_data{
+    width: 300px;
+    text-align: center;
+}
+.gallery_img{
+    width: 100%;
+}
+
+.about-user_name{
+    display: flex;
+    /* justify-content: center; */
+}
+.name{
+    margin: 0 10px;
+}
+input{
+    margin: 5px 10px;
+}
+.about-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-title,
+.features-title,
+.gallery-title{
+    text-align: center;
+}
+.about_choose{
+    display: flex;
+    flex-direction:column;
+    /* margin: 0 290px; */
+}
+@media screen and (max-width: 600px){
+    .stories_container{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .stories_img{
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+    }
+    .stories_order{
+        order: 0;
+    }
+    .stories-text{
+        font-size: 18px;
+    }
+    h1, h2, h3{
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .nav_logo{
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+    .nav_list, .social{
+        display: none;
+    }
+    .features_data{
+        border-bottom: 1.5px solid rgb(197, 197, 197);
+        padding-top: 10px;
+    }
+    
+    .about-user_name{
+        display: flex;
+        flex-direction: column;  
+        
+    }
+    
+    
+    
+   
+}
